@@ -73,7 +73,6 @@ body {
 
 /*header section*/
 .hero_area {
-  height: 98vh;
   background-color: #f7f7f7;
 }
 
@@ -180,9 +179,6 @@ a:focus {
 /*end header section*/
 
 /* slider section */
-.slider_section {
-  padding-top: 8%;
-}
 
 .slider_item-box {
   width: 100%;
@@ -200,6 +196,7 @@ a:focus {
 
 .slider_img-box img {
   width: 100%;
+  border-radius: 50%
 }
 
 .slider_item-container {
@@ -234,6 +231,9 @@ a:focus {
 .carousel-inner,
 .carousel-item {
   height: 100%;
+  background-color: rgba(255,255,255,0.4);
+  padding: 10px;
+  min-height: 450px;
 }
 
 .slider_section .custom_carousel-control {
@@ -243,7 +243,10 @@ a:focus {
   width: 105px;
   transform: translateY(-50%);
 }
-
+.position-relative {
+  position: relative !important;
+  background-image: url(../images/peanut-butter-wallpapers.jpg);
+}
 .slider_section .custom_carousel-control .carousel-control-prev,
 .slider_section .custom_carousel-control .carousel-control-next {
   margin: 10px 0;
@@ -502,3 +505,10 @@ a:focus {
 }
 
 /* end footer section*/
+
+/* common CSS */
+a.nav-link.active:before {
+  content: "||";
+  margin-right: 5px;
+  color: orange;
+}
